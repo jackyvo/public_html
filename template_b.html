@@ -1,0 +1,61 @@
+<table width="100%" cellspacing="0" cellpadding="0"
+  style="background-color: #ffffff; font-family: Satoshi, sans-serif; max-width: 600px; margin: 20px auto; color: #64748b; border-radius: 15px; border: solid 1px #F1F5F9; box-sizing: border-box; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;"
+  >
+  <tr>
+    <td style="padding: 20px; text-align: center; background-color: #F1F5F9">
+      <div style="font-size: 18px; font-weight: bold; margin-bottom: 15px;">THANK YOU</div>
+      {{agency_logo}}
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center; padding: 20px; background-color: #F1F5F9">
+      <div style="font-size: 16px; margin-bottom: 10px;">Hi {{customer_full_name}},</div>
+      <div style="margin-bottom: 15px;">Thank you for the order!</div>
+      <a href={{rental_agreement_link}} style="background-color: #7E3AF2; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px;">
+        {{rental_agreement_title}}
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="margin-top: 20px; padding: 20px;">
+      <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px;">Order ID: {{order_id}}</div>
+      {{order_line_tpl}}
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 10px 20px 20px; text-align: center">
+      <p style="font-weight: bold; margin-bottom: 10px; padding: 0;">Your rental order is being processed:</p>
+      <p style="margin: 5px 0; padding: 0;">{{ship_to_full_name}}</p>
+      <p style="margin: 5px 0; padding: 0;">{{ship_to_address}}</p>
+      <p style="margin: 5px 0; padding: 0;">{{ship_to_city}}</p>
+      <p style="margin: 5px 0; padding: 0;">{{ship_to_state}}</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color: #F1F5F9; padding: 20px; text-align: center;">
+      <div style="margin-bottom: 40px">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="text-align: center; width: 50%">
+              <div style="color: #64748b;">
+                <img src="https://icons.iconarchive.com/icons/iconsmind/outline/128/Envelope-icon.png" alt="contact" style="width: 50px;">
+                <div>{{contact_email}}</div>
+              </div>
+            </td>
+            <td style="text-align: center; width: 50%">
+              <div style="color: #64748b;">
+                <img src="https://icons.iconarchive.com/icons/iconsmind/outline/128/Phone-icon.png" alt="phone" style="width: 50px;">
+                <div>{{phone}}</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="margin-bottom: 10px;">{{agency_name}}</div>
+      <div style="margin-bottom: 40px;">Please feel free to reply to this email with any questions.</div>
+      <div style="margin-bottom: 20px;">
+        {{social_links}}
+      </div>
+    </td>
+  </tr>
+</table>
